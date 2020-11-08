@@ -20,17 +20,22 @@
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
-            @livewire('navigation-dropdown')
 
-            <!-- Page Heading -->
-            <header class="bg-white shadow">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    {{ $header }}
-                </div>
-            </header>
+            <!-- Page Sidebar -->
+            <x-sidebar></x-sidebar>
 
             <!-- Page Content -->
-            <main>
+            <main class="w-full bg-gray-200 pl-0 lg:pl-64 min-h-screen">
+            <div class="sticky top-0 z-40">
+                
+                @livewire('navigation-dropdown')
+
+                <header class="bg-white shadow">
+                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                        {{ $header }}
+                    </div>
+                </header>
+            </div>
                 {{ $slot }}
             </main>
         </div>
