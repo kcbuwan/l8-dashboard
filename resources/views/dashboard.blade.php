@@ -6,10 +6,10 @@
     </x-slot>
 
     
-        <div class="max-w-7xl mx-auto mt-10">
-            <div class="bg-white">
-                <x-jet-welcome />
-            </div>
+    <div class="max-w-7xl mx-auto mt-10">
+        <div class="flex flex-wrap -mx-3">
+            @include('components.widget')
         </div>
+    </div>
     
 </x-app-layout>

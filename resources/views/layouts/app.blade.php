@@ -22,7 +22,7 @@
         <div class="min-h-screen bg-gray-100">
 
             <!-- Page Sidebar -->
-            <x-sidebar></x-sidebar>
+            @include('components.sidebar')
 
             <!-- Page Content -->
             <main class="w-full bg-gray-200 pl-0 lg:pl-64 min-h-screen">
