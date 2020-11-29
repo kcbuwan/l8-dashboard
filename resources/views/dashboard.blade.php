@@ -6,9 +6,11 @@
     </x-slot>
 
     
-    <div class="max-w-7xl mx-auto mt-10">
-        <div class="flex flex-wrap -mx-3">
+    <div class="p-8 px-4">
+        <div class="flex flex-wrap -mr-3">
             @include('components.widget')
+            @include('components.activity')
+            @include('components.latest-signup')
         </div>
     </div>
     
